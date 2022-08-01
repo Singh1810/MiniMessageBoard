@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Message Board</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="main">
+                <form action="/success" method="POST">
+                    <h2>...Message Board...</h2>
+                    <label>Name :</label>
+                    <input type="text" class="box" id="name" name="name" placeholder="enter your name..." required />
+                    <br>
+                        <label for="comment">Message :</label>
+                        <input type="text" class="msg-box" id="text" name="text" placeholder="write a message..." required />
+                      <br>
+                    <input type="submit" value="Send" id="submit" />
+                </form>
+            </div>
+        </div>
+        <div class="display">
+            <table>
+                <thead>
+                    <th>Name</th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th>Message</th>
+                </thead>
+                <tbody id="list">
+                   
+                </tbody>   
+            </table>
+        </div>
+    </div>
+    <script src="display.js"></script>
+</body>
+</html>
